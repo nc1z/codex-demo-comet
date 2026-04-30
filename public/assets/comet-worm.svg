@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 150" role="img" aria-labelledby="title">
+  <title id="title">COMET</title>
+  <g fill="none" stroke="#ff3b32" stroke-linecap="round" stroke-linejoin="round" stroke-width="24">
+    <path d="M124 37C98 17 56 24 38 55c-20 34 3 78 44 78h61"/>
+    <path d="M206 31c-34 0-58 24-58 52s24 52 58 52 58-24 58-52-24-52-58-52Z"/>
+    <path d="M311 133V42c0-7 5-12 12-12 5 0 9 3 12 8l35 64 35-64c3-5 7-8 12-8 7 0 12 5 12 12v91"/>
+    <path d="M512 32h-64v101h64"/>
+    <path d="M451 82h55"/>
+    <path d="M548 32h104"/>
+    <path d="M600 32v101"/>
+  </g>
+  <path d="M27 103c116-61 238-87 365-76 93 8 187 37 274 86" fill="none" stroke="#ff3b32" stroke-linecap="round" stroke-width="8"/>
+</svg>
