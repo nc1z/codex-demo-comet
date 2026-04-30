@@ -3,29 +3,31 @@ import { createRoot } from "react-dom/client";
 import * as THREE from "three";
 import "./styles.css";
 
+const assetUrl = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 const missions = [
   {
     name: "Artemis II",
     copy: "Testing the Orion spacecraft and SLS rocket on the path to the Moon and Mars.",
-    image: "/assets/missions/artemis-ii.png",
+    image: assetUrl("/assets/missions/artemis-ii.png"),
   },
   {
     name: "Europa Clipper",
     copy: "Investigating Jupiter's ocean moon and the conditions that could support life.",
-    image: "/assets/missions/europa-clipper.png",
+    image: assetUrl("/assets/missions/europa-clipper.png"),
   },
   {
     name: "James Webb Space Telescope",
     copy: "Revealing the universe in unprecedented detail across infrared wavelengths.",
-    image: "/assets/missions/jwst.png",
+    image: assetUrl("/assets/missions/jwst.png"),
   },
 ];
 
 const gallery = [
-  ["Carina Nebula", "/assets/gallery/carina-nebula.png"],
-  ["M51 Whirlpool", "/assets/gallery/m51-whirlpool.png"],
-  ["Pillars of Creation", "/assets/gallery/pillars-creation.png"],
-  ["Southern Ring", "/assets/gallery/southern-ring.png"],
+  ["Carina Nebula", assetUrl("/assets/gallery/carina-nebula.png")],
+  ["M51 Whirlpool", assetUrl("/assets/gallery/m51-whirlpool.png")],
+  ["Pillars of Creation", assetUrl("/assets/gallery/pillars-creation.png")],
+  ["Southern Ring", assetUrl("/assets/gallery/southern-ring.png")],
 ];
 
 const timeline = [
@@ -108,7 +110,7 @@ function HeroScene() {
     earth.position.set(5.35, -1.7, -1.45);
     group.add(earth);
 
-    new THREE.TextureLoader().load("/assets/earth-texture.png", (texture) => {
+    new THREE.TextureLoader().load(assetUrl("/assets/earth-texture.png"), (texture) => {
       texture.colorSpace = THREE.SRGBColorSpace;
       texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
       earthMaterial.map = texture;
@@ -283,7 +285,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="COMET home">
-        <img src="/assets/comet-worm.svg" alt="COMET" />
+        <img src={assetUrl("/assets/comet-worm.svg")} alt="COMET" />
       </a>
       <nav className="nav-links" aria-label="Primary navigation">
         <a href="#missions">Missions</a>
@@ -422,7 +424,7 @@ function Footer() {
   return (
     <footer className="footer">
       <span className="brand footer-brand">
-        <img src="/assets/comet-worm.svg" alt="COMET" />
+        <img src={assetUrl("/assets/comet-worm.svg")} alt="COMET" />
       </span>
       <nav aria-label="Footer navigation">
         <a href="#top">Privacy Policy</a>
