@@ -1,6 +1,8 @@
-# GPT 5.5 + GPT Image 2 Few-Shot Prompting
+# GPT 5.5 + GPT Image 2
 
 This frontend landing page demo was built with Codex, GPT 5.5, GPT Image 2, and the Build Web Apps plugin.
+
+<img width="1458" height="817" alt="comet-landing" src="https://github.com/user-attachments/assets/beeb70b2-b336-45f8-90f0-adb008c74511" />
 
 Disclaimer: This was a casual test. I did not overthink the prompt, optimize for UX, or try to make it production-ready. This was meant to see what kind of design direction it would produce with minimal guidance.
 
